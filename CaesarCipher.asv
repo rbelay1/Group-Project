@@ -1,0 +1,15 @@
+function [Cipher]=CaesarCipher(keyword) %function CaesarCipher will take the keyword 
+% and output the enciphered text%
+alphabet=('a':'z'); %vector of the letters of the alphabet%
+keyword='keyword'; %the specific keyword%
+new_alphabet=[]; %an empty vector for the new alphabet for the cipher&
+for ii=1:length(alphabet) %vector of the length of the alphabet%
+    new_alphabet=[keyword,new_alphabet]; %concatenated vector for the cipher
+    location=strfind(alphabet,keyword);
+    alphabet(location)=[];
+end
+Cipher=new_alphabet(keyword);
+disp(Cipher);
+end
+
+
