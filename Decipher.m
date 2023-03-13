@@ -1,0 +1,20 @@
+function Deciphered_Text=Decipher(Cipher,keyword) %function takes in ciphered word and keyword 
+% and outputs deciphered text%
+alphabet=('a':'z'); %vector of the alphabet%
+new_alphabet=alphabet; %create a copy of the alphabet under the vector new alphabet%
+Deciphered_Text=[]; %create an empty vector for the deciphered text%
+      for ii=1:length(keyword) %create a vector ii with the length of the keyword%
+          location1=strfind(new_alphabet,keyword(ii));  %find the indices of each letter 
+          % of the keyword in the new alphabet%
+          new_alphabet(location1)=[]; %delete the letters of the keyword 
+          % from the new alphabet%                
+      end 
+new_alphabet=[keyword,new_alphabet]; %create a vector for the new alphabet%
+for jj=1:length(Cipher) %create a vector jj of the length of the enciphered word%
+    location2=strfind(new_alphabet,Cipher(jj));%find the indices of each letter of the 
+          % enciphered in the new alphabet%
+    output=alphabet(location2); % %create the output word from the original alphabet%
+    Deciphered_Text=[Deciphered_Text,output]; %deciphered word%
+end
+disp(Deciphered_Text);
+end
