@@ -6,21 +6,23 @@ shift = 1;
 my_mat=[];
 for ii = 0:numel(rows)-1
 tmp = circshift(rows, -ii);
-my_mat = [my_mat;tmp];
+my_mat = [my_mat;tmp]
 end
 %% keyword repeated until length of plaintext
 keyword = 'lemon'; keyword = keyword(find(~isspace(keyword)));
 plaintext = 'attack at dawn'; plaintext = plaintext(find(~isspace(plaintext)));
 keyreps = floor(length(plaintext)/length(keyword));
-extendedkey = [repmat(keyword,1,keyreps) keyword(1:rem(length(plaintext),length(keyword)))];
+extendedkey = [repmat(keyword,1,keyreps) keyword(1:rem(length(plaintext),length(keyword)))]
 %% [key-row, msg-col] to encipher
-ciphertext='';
+ciphertext=[];
 for jj = 1:length(plaintext)
     x = double((plaintext)); numplain = x-96;   
     y = double((extendedkey)); numkey = y-96;
-    ciphertext = my_mat(numplain,numkey);%% row A, column L
+    tmp = my_mat(numplain(jj),numkey(jj));%% row A, column L
+    ciphertext = [ciphertext tmp];
 end
-disp(ciphertext)
+% disp(numplain); disp(numkey);
+% disp(ciphertext);
 %% [key-row, ciphertext-letter in col X] to decipher
 
 
