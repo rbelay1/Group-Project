@@ -1,4 +1,6 @@
 function enciphered_text = col_trans(keyword,message) %a function col_trans that takes in a keyword and message and outputs an enciphered text
+keyword=  'repmat'
+message = 'geeks for geeks'
 
 alphabet = 'a':'z'; %calls the alphabet 
 cols =  size(keyword,2); %sets the number of columns equal to the length of the keyword
@@ -10,6 +12,7 @@ message = horzcat(message, fill_empty);
 size(message)
 mat = reshape(message,cols,rows); %creates a matrix of the appropriate row and column size depending on the keyword and message
 mat= mat'; %the message is originally written vertically instead of horizontally so need to transpose it 
+size(mat)
 
 %%Part 2: sort the keyword and read down the columns in this order
 
