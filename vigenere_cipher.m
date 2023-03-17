@@ -1,16 +1,16 @@
 %% Vigenère cipher %%
-% function [ciphertext] = vigenere_cipher('plaintext','keyword');
+function [ciphertext] = vigenere_cipher(plaintext,keyword);
 %% a:z repeating 26 times but each time indices shift 1
-rows = (['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']);
-shift = 1;
+% rows = (['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']);
+rows = 'a':'z';
 my_mat=[];
 for ii = 0:numel(rows)-1
 tmp = circshift(rows, -ii);
 my_mat = [my_mat;tmp];
 end
 %% keyword repeated until length of plaintext
-keyword = 'lemon'; keyword = keyword(find(~isspace(keyword)));
-plaintext = 'attack at dawn'; plaintext = plaintext(find(~isspace(plaintext)));
+keyword = keyword(find(~isspace(keyword))); keyword = lower(keyword);
+plaintext = plaintext(find(~isspace(plaintext))); plaintext = lower(plaintext);
 keyreps = floor(length(plaintext)/length(keyword));
 extendedkey = [repmat(keyword,1,keyreps) keyword(1:rem(length(plaintext),length(keyword)))];
 %% [key-row, msg-col] to encipher
@@ -22,10 +22,11 @@ for jj = 1:length(plaintext)
     ciphertext = [ciphertext tmp];
 end
 disp(ciphertext);
-%% [key-row, ciphertext-letter in col X] to decipher
+
+%% [key-row, position of ciphertext-letter in col X to pull column number] to decipher
 
 
 
-
+end
 
 
