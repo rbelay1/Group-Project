@@ -14,14 +14,14 @@ mat = mat'; %message is originally written vertically instead of horizontally so
 
 %%Part 2: sort the keyword and read down the columns in appropriate order
 
-enciphered_text = []; %creates empty vector
+enciphered_text = []; %creates empty vector that columns will be concatenated to to form enciphered text
 sort_key = sort(keyword); %sorts keyword in alphabetical order
 for ii = 1:length(sort_key) %loops through the sorted keyword
-    ltr = sort_key(ii); %assigns the current letter of keyword to variable 'ltr'
-    index = find(keyword == ltr); %finds index of the respective letter in unsorted keyword
-    encipher = mat(:,index); %reads down column of respective index in matrix
-    encipher = encipher'; %transposes columnso it's read horizontally
-    enciphered_text = [enciphered_text encipher]; %updates empty vector to include new column
+    ltr = sort_key(ii); %
+    index = find(keyword == ltr);
+    encipher = mat(:,index);
+    encipher = encipher';
+    enciphered_text = [enciphered_text encipher];
 end
 end
 
