@@ -20,7 +20,7 @@ for ii = 1:length(sort_key) %loops through the sorted keyword
     ltr = sort_key(ii); %assigns the current letter of keyword to variable 'ltr'
     index = find(keyword == ltr); %finds index of the respective letter in unsorted keyword
     encipher = mat(:,index); %reads down column of respective index in matrix
-    encipher = encipher'; %transposes columnso it's read horizontally
+    encipher = encipher'; %transposes columns it's read horizontally
     enciphered_text = [enciphered_text encipher]; %updates empty vector to include new column
 end
 end
