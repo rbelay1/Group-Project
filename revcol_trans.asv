@@ -1,12 +1,12 @@
 function message = revcol_trans(keyword,enciphered_text)
 
-%%Part 1: setting up the matrix 
+%%Part 1: Setting up the matrix 
 alphabet = 'a':'z';
 cols = size(keyword,2);
 rows = ceil(size(enciphered_text,2)/size(keyword,2));
 mat = reshape(enciphered_text,rows,cols);
 
-%%Part 2: create new matrix with columns in unscrambled order
+%%Part 2: Creating a new matr
 tmp_mat = [];
 sort_key = sort(keyword);
 for ii= 1:length(keyword)
@@ -16,7 +16,7 @@ for ii= 1:length(keyword)
     tmp_mat = [tmp_mat, decipher];
 end 
 
-%%Part 3: go through new matrix and write out the message(deciphered text)
+%%Part 3:
 message = [];
 for jj = 1:rows
     encipher = tmp_mat(jj,:);
