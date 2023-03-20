@@ -17,7 +17,7 @@ mat = mat'; %message is originally written vertically instead of horizontally so
 enciphered_text = []; %creates empty vector
 sort_key = sort(keyword); %sorts keyword in alphabetical order
 for ii = 1:length(sort_key) %loops through the sorted keyword
-    ltr = sort_key(ii); %assigns the current letter of keyword to variable 'ltr'
+    ltr = sort_key(ii); %assigns the current letter of sorted keyword to variable 'ltr'
     index = find(keyword == ltr); %finds index of the respective letter in unsorted keyword
     encipher = mat(:,index); %reads down column of respective index in matrix
     encipher = encipher'; %transposes columns it's read horizontally
