@@ -2,8 +2,8 @@ function Cipher=CaesarCipher(input,keyword) %function takes in input word and ke
 % and outputs ciphered text%
 alphabet=('a':'z'); %vector of the alphabet%
 new_alphabet=alphabet; %create a copy of the alphabet under the vector new alphabet%
-input1=lower(input);
-keyword1=lower(keyword);
+input1=lower(input); %set input word to lower case%
+keyword1=lower(keyword); %set keyword to lower case%
 Cipher=[]; %create an empty vector for the cipher%
       for ii=1:length(keyword1) %create a vector ii with the length of the keyword%
           location1=strfind(new_alphabet,keyword1(ii)); %find the indices of each letter 
@@ -16,7 +16,7 @@ new_alphabet=[keyword1,new_alphabet]; %create a vector for the new alphabet%
           location2=strfind(alphabet,input1(jj)); %find the indices of each letter of the 
           % input word in the original alphabet%
           output=new_alphabet(location2); %create the output word from the new alphabet%
-          Cipher=[Cipher,output]; %enciphered word%
+          Cipher=[Cipher, output]; %enciphered word%
       end
           disp(Cipher);
 end
