@@ -12,8 +12,10 @@ App/User Interface Demo
 ![](appdemo.gif)
 
 Columnar Transposition Demo
-![](Columnar Decipher.gif)
+
+![](columnardecipher.gif)
 
 Columnar Decipher Demo
-![](Columnar Transposition.gif)
+
+![](columnartransposition.gif)
 
