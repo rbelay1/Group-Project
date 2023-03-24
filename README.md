@@ -23,4 +23,4 @@ Columnar Decipher Demo
 
 #Time Log
 
-![](https://docs.google.com/spreadsheets/d/1Kc-qH9MRbdj3DXeu3VTYE6WloZHMvsThQlUcaXCVQFU/edit?usp=sharing)
+![](timelog.csv)

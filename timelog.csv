@@ -1,0 +1,28 @@
+Name,Date,Activity,Time Spent,,Date,Activity,Time Spent
+Aislinn,3/13,Vigenere cipher and research in Matlab ,2 hr,Group Meetings,3/11,Researching/deciding on ciphers and splitting up work ,4 hr
+Vladnira,3/13,Columnar Cipher pseudocode,1 hr,,3/12,Creating ciphers/alphabets,2 hr
+Ruth,3/13,Caesar Cipher,1 hr,,3/14,"Working on ciphering, interface",2 hr
+Aislinn,3/13,Set up matrix and keyword for Vigenere cipher ,1.5 hr,,3/16,"Inferface, combining ciphers",2 hr
+Vladnira,3/13,Set up matrix for columnar cipher,1 hr,,3/19,Deciphering on interface,3 hr
+Ruth,3/13,Set up code for deciphering,2 hr,,3/21,Plannng and making video,1.5 hr
+Ruth,3/13,Learning how to create UI ,1 hr,,,,
+Ruth,3/14,Set up callback functon,1 hr,,,,
+Aislinn,3/15,Set up extended key,1.5 hr,,,,
+Vladnira,3/15,Fix dimension size bug,1.5 hrs,,,,
+Ruth,3/15,Working on lower/upper case letters ,1 hr,,,,
+Vladnira,3/15,"Change dimensions, define order, write message into encrypted text",2.75 hrs,,,,
+Vladnira ,3/16,"Generalizing code, helping debug other ciphers",2 hrs,,,,
+Aislinn,3/16,Calling the right values from matrix,1 hr,,,,
+Ruth,3/16,Trying to link UI to other ciphers / spaces in a string,2 hr,,,,
+Vladnira ,3/17,Decipher pseudocode and begin decipher function,1 hr,,,,
+Aislinn,3/17,Making the function,1 hr,,,,
+Ruth,3/17,Debugging UI code,1.5 hr ,,,,
+Vladnira ,3/18,Decipher function,.5 hrs,,,,
+Vladnira,3/18,Debugging decipher function ,1 hr,,,,
+Ruth,3/18,Adding other functions to UI,.5 hrs,,,,
+Vladnira ,3/20,Comments and checking user interface,1 hr,,,,
+Aislinn,3/20,Decipher function,1 hr,,,,
+Ruth,3/20,Debugging UI callback function,1 hr,,,,
+Aislinn,3/20,Calling value to output column,1 hr,,,,
+Aislinn,3/22,Finishing decipher,1.5 hr,,,,
+Ruth,3/22,Finishing user interface/linked to all 3 ciphers,0.5 hr,,,,
