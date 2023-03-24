@@ -21,7 +21,7 @@ Columnar Decipher Demo
 
 Vigenere Cipher Demo
 
-![](vigenere_cipher.gif)
+![](vigenere_cipher2.gif)
 
 Vigenere Decipher Demo
 
