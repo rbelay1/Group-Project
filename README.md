@@ -20,7 +20,9 @@ Columnar Decipher Demo
 ![](columnartransposition.gif)
 
 Vigenere Cipher Demo
+
 ![](vigenere_cipher.gif)
 
 Vigenere Decipher Demo
+
 ![](vigenere_decipher.gif)
