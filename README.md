@@ -21,6 +21,3 @@ Columnar Decipher Demo
 
 
 
-#Time Log
-
-![](timelog.csv)
