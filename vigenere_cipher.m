@@ -25,5 +25,3 @@ end
 
 end
 
-
-imread("vigenere_cipher.gif")
